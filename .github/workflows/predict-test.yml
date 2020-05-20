@@ -11,14 +11,14 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Install
-        uses: abatilo/actions-poetry
+        uses: abatilo/actions-poetry@master
         with:
           python_version: 3.8.2
           poetry_version: 1.0.5
           working_directory: . # Optional, defaults to '.'
           args: install
       - name: Run Prediction
-        uses: abatilo/actions-poetry
+        uses: abatilo/actions-poetry@master
         with:
           python_version: 3.8.2
           poetry_version: 1.0.5
